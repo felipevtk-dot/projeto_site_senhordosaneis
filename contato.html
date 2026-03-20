@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div>
+        <h1 id="Titulo_principal">O senhor dos anéis</h1>
+        <h2 id="Titulo_principal">Uma das trilogias mais famosas do cinema</h2>
+      
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="sinopse.html">Sinopse</a>
+        <a href="imagen_do_filme.html">Imagem do filme</a>
+        <a href="personagens_principais.html">Personagens principais</a>
+        <a href="informacoes.html">Informações</a>
+        <a href="Curiosidades.html">Curiosidades</a>
+        <a href="impacto.html">Impacto Cultural</a>
+        <a href="ordem_dos_filmes.html">Ordem dos filmes</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+    <h2 class="Titulo_secundario">Entrem em contato</h2>
+    <form action="processa.php" method="post" autocomplete="off">
+
+        <label for="nomepessoa">Nome:</label>
+        <input type="text" name="nomepessoa"
+        id="nomepessoa" minlength="3" maxlength="15" 
+        required placeholder="Informe seu nome">><br><br>
+        
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"
+        required placeholder="E-mail"><br><br>
+
+        <label for="ano">Ano de nascimento</label>
+        <input type="=number" id="ano" name="ano" max="2026" min="1990" 
+        placeholder="Informe ano de nascimento"><br><br>
+
+        <label for="telefone">telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone"><br><br>
+
+        <label for="github">Informe seu github</label>
+        <input type="url" name="github" id="github" placeholder="Informe seu github"><br><br>
+
+        <label for="senha">Informe sua senha</label>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <label for="arquivo">anexe um arquivo</label>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+        <label for="cor">Escolha uma cor</label>
+        <input type="color" id="cor" name="cor"><br><br>
+        <fieldset>
+            <legend>Campos de tempo</legend>
+            <label for="data">Informe a data"</label>
+            <input type="date" name="data" id="data"><br><br>
+
+            <label for="mes">Informe o mês</label>
+            <input type="month" name="mes" id="mes"><br><br>
+
+            <label for="semana">Informe a semana</label>
+            <input type="week" name="semana" id="semana"><br><br>
+
+
+            <label for="hora">Informe a hora</label>
+            <input type="time" name="hora" id="hora"><br><br>
+
+            <label for="data/hora">Date e hora atual</label>
+            <input type="datetime-local" name="data/hora" id="data/hora">
+        </fieldset>
+
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" name="pesquisa" id="pesquisa"><br><br>
+
+        <label for="descricao">Informe aqui o que você gosta nos filmes</label>
+        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea><br><br>
+        <fieldset>
+            <legend>Qual o seu filme favorito</legend>
+            <label for="filme 1">Filme 1</label>
+            <input checked type="radio" name="filme" value="filme 1" id="filme 1">
+
+            <label for="filme 2">Filme 2</label>
+            <input type="radio" name="filme" value="filme 2" id="filme 2">
+
+            <label for="filme 3">Filme 3</label>
+            <input type="radio" name="Filme" value="Filme 3" id="filme 3" >
+        </fieldset>
+
+        <select>
+            <option value="filme 1">Filme 1</option>
+            <option value="filme 2">Filme 2</option>
+            <option selected value="filme 3">Filme 3</option>
+        </select>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

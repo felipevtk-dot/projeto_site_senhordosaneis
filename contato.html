@@ -106,13 +106,32 @@
             
         </select><br><br>
 
-        <label for=""></label>
-        <label for=""><input type="checkbox"></label>
-
         <label for="nivel">Escolha o nivel</label>
         <input type="range" max="10" min="1" id="nivel" name="nivel">
 
+        <fieldset>
+            <legend>Desenvolvimento para internet</legend>
+            <label><input type="checkbox" name="php" value="php">php</label>
+            <label><input type="checkbox" name="html5" value="html5">html5</label>
+            <label><input type="checkbox" name="css" value="css">css</label>
+            <label><input type="checkbox" name="js" value="js">js</label>
+        </fieldset><br><br>
         
+
+        <!-- Datalist possíveis ganhadores da copa do mundo 26-->
+         <input type="text" id="busca_datalist" list="paises">
+        <datalist id="paises">
+            <option value="">Brasil</option>
+            <option value="">França</option>
+            <option value="">Argentina</option>
+            <option value="">Alemanha</option>
+            <option value="">Inglaterra</option>
+            <option value="">Espanha</option>
+        </datalist><br><br>
+        
+        <audio ></audio>
+            <source src="audio/musica.mp3" type="audio">
+        </audio>
 
         <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>

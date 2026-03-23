@@ -92,10 +92,27 @@
         </fieldset>
 
         <select>
-            <option value="filme 1">Filme 1</option>
-            <option value="filme 2">Filme 2</option>
-            <option selected value="filme 3">Filme 3</option>
-        </select>
+            <optgroup label="Teste de legenda no combobox">
+                <option value="filme 1">Filme 1</option>
+                <option value="filme 2">Filme 2</option>
+                <option value="filme 3">Filme 3</option>
+            </optgroup>
+
+            <optgroup label="Teste de legenda no combobox 2">
+                <option value="filme 4">Filme 4</option>
+                <option value="filme 5">Filme 5</option>
+                <option selected value="filme 6">Filme 6</option>
+            </optgroup>
+            
+        </select><br><br>
+
+        <label for=""></label>
+        <label for=""><input type="checkbox"></label>
+
+        <label for="nivel">Escolha o nivel</label>
+        <input type="range" max="10" min="1" id="nivel" name="nivel">
+
+        
 
         <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>

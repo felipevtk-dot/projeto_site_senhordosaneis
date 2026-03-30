@@ -40,13 +40,13 @@
         required placeholder="E-mail"><br><br>
 
         <label for="ano">Ano de nascimento</label>
-        <input type="=number" id="ano" name="ano" max="2026" min="1990" 
+        <input type="number" id="ano" name="ano" max="2026" min="1990" 
         placeholder="Informe ano de nascimento"><br><br>
         <fieldset>
             <legend>Qual é a sua raça?</legend>
             
             <input checked type="radio" name="raça" value="Humano" id="Humano">
-            <label for="raça 1">Humano</label>
+            <label for="Humano">Humano</label>
             
 
             <input type="radio" name="raça" value="Elfo" id="Elfo">
@@ -62,90 +62,67 @@
             
         </fieldset>
 
-
-
-        <label for="telefone">telefone</label>
-        <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone"><br><br>
-
-        <label for="github">Informe seu github</label>
-        <input type="url" name="github" id="github" placeholder="Informe seu github"><br><br>
-
-        <label for="senha">Informe sua senha</label>
-        <input type="password" id="senha" name="senha"><br><br>
-
-        <label for="arquivo">anexe um arquivo</label>
-        <input type="file" id="arquivo" name="arquivo"><br><br>
-
-        <label for="cor">Escolha uma cor</label>
-        <input type="color" id="cor" name="cor"><br><br>
-        <fieldset>
-            <legend>Campos de tempo</legend>
-            <label for="data">Informe a data"</label>
-            <input type="date" name="data" id="data"><br><br>
-
-            <label for="mes">Informe o mês</label>
-            <input type="month" name="mes" id="mes"><br><br>
-
-            <label for="semana">Informe a semana</label>
-            <input type="week" name="semana" id="semana"><br><br>
-
-
-            <label for="hora">Informe a hora</label>
-            <input type="time" name="hora" id="hora"><br><br>
-
-            <label for="data/hora">Date e hora atual</label>
-            <input type="datetime-local" name="data/hora" id="data/hora">
-        </fieldset>
-
-        <label for="pesquisa">Pesquisa</label>
-        <input type="search" name="pesquisa" id="pesquisa"><br><br>
-
-        <label for="descricao">Informe aqui o que você gosta nos filmes</label>
-        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea><br><br>
-        
-
-        <select>
-            <optgroup label="Teste de legenda no combobox">
-                <option value="filme 1">Filme 1</option>
-                <option value="filme 2">Filme 2</option>
-                <option value="filme 3">Filme 3</option>
+        <label for="filme">Escolha seu filme favorito:</label>
+        <select id="filme" name="filme">
+            <optgroup>
+                <option value="sociedade_do_anel">A Sociedade do Anel</option>
+                <option value="duas_torres">As Duas Torres</option>
+                <option value="retorno_rei">O Retorno Do Rei</option>
             </optgroup>
-
-            <optgroup label="Teste de legenda no combobox 2">
-                <option value="filme 4">Filme 4</option>
-                <option value="filme 5">Filme 5</option>
-                <option selected value="filme 6">Filme 6</option>
-            </optgroup>
-            
         </select><br><br>
 
-        <label for="nivel">Escolha o nivel</label>
-        <input type="range" max="10" min="1" id="nivel" name="nivel">
+        <label for="local">Escolha um local da Terra Média:</label>
+        <select id="local" name="local">
+            <optgroup label="Reino dos Homemens">
+                <option value="gondor">Gondor</option>
+                <option value="rohan">Rohan</option>
+            </optgroup>
+
+            <optgroup label="Terras Élficas">
+                <option value="valfenda">Valfenda</option>
+                <option value="lothlórien">Lothlórien</option>
+            </optgroup>
+                
+            <optgroup label="Outros">
+                <option value="mordor">Mordor</option>
+                <option value="Condado">Condado</option>
+            </optgroup>
+        </select><br><br>
 
         <fieldset>
-            <legend>Desenvolvimento para internet</legend>
-            <label><input type="checkbox" name="php" value="php">php</label>
-            <label><input type="checkbox" name="html5" value="html5">html5</label>
-            <label><input type="checkbox" name="css" value="css">css</label>
-            <label><input type="checkbox" name="js" value="js">js</label>
+            <legend>Suas Habilidades</legend>
+            <label><input type="checkbox" name="espada" value="espada">Espada</label>
+            <label><input type="checkbox" name="arco" value="arco">Arco e Flecha</label>
+            <label><input type="checkbox" name="magia" value="magia">Magia</label>
+            <label><input type="checkbox" name="furtividade" value="furtividade">Furtividade Hobbit</label>
         </fieldset><br><br>
-        
 
-        <!-- Datalist possíveis ganhadores da copa do mundo 26-->
-         <input type="text" id="busca_datalist" list="paises">
-        <datalist id="paises">
-            <option value="">Brasil</option>
-            <option value="">França</option>
-            <option value="">Argentina</option>
-            <option value="">Alemanha</option>
-            <option value="">Inglaterra</option>
-            <option value="">Espanha</option>
+        <label for="nivel">Nivel de Coragem(1 a 10):</label>
+        <input type="range" min="1" max="10" id="nivel" name="nivel"><br><br>
+
+        <label for="busca">Seu reino de origem:</label>
+        <input type="text" id="busca" list="origem">
+        <datalist id="origem">
+            <option value="Gondor"></option>
+            <option value="Rohan"></option>
+            <option value="Mordor"></option>
+            <option value="Condado"></option>
         </datalist><br><br>
-        
-        
 
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
+        <label for="cor">Cor do seu manto</label>
+        <input type="color" id="cor" name="cor"><br><br>
+
+        <label for="data">Data da sua jornada:</label>
+        <input type="date" name="data" id="data"><br><br>
+        
+        <label for="reliquia">Anexe uma reliquia:</label>
+        <input type="file" id="reliquia" name="reliquia"><br><br>
+
+        <label for="mensagem">Mensagem ao Conselho:</label><br>
+        <textarea name="mensagem" id="mensagem" cols="40" rows="8">Escreva sua missão...</textarea><br><br>
+
+        <button type="reset">Apagar Pergaminho</button>
+        <button type="submit">Enviar Para Valfenda</button>
     </form>
 </body>
 </html>

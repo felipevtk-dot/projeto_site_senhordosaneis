@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" type="imagen/x-icon" href="img/espada.ico">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -26,22 +25,44 @@
         <a href="contato.html">Contato</a>
       </nav>
     </div>
-    <h2 class="Titulo_secundario">Entrem em contato</h2>
+    <h1 class="Titulo_secundario">Contato com a Terra Média</h1>
+    <p>Envie sua mensagem diretamente para o Conselho Elrond </p>
     <form action="processa.php" method="post" autocomplete="off">
 
-        <label for="nomepessoa">Nome:</label>
+        <label for="nomepessoa">Nome na Terra Média:</label>
         <input type="text" name="nomepessoa"
         id="nomepessoa" minlength="3" maxlength="15" 
-        required placeholder="Informe seu nome">><br><br>
+        required placeholder="EX: Aragorn"><br><br>
         
 
-        <label for="email">Email:</label>
+        <label for="email">Corvo Eletrônico (Email):</label>
         <input type="email" name="email" id="email"
         required placeholder="E-mail"><br><br>
 
         <label for="ano">Ano de nascimento</label>
         <input type="=number" id="ano" name="ano" max="2026" min="1990" 
         placeholder="Informe ano de nascimento"><br><br>
+        <fieldset>
+            <legend>Qual é a sua raça?</legend>
+            
+            <input checked type="radio" name="raça" value="Humano" id="Humano">
+            <label for="raça 1">Humano</label>
+            
+
+            <input type="radio" name="raça" value="Elfo" id="Elfo">
+            <label for="Elfo">Elfo</label>
+            
+
+            <input type="radio" name="raça" value="Anão" id="Anão">
+            <label for="Anão">Anão</label>
+            
+
+            <input type="radio" name="raça" value="Hobbit" id="Hobbit">
+            <label for="Hobbit">Hobbit</label>
+            
+        </fieldset>
+
+
 
         <label for="telefone">telefone</label>
         <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone"><br><br>
@@ -81,17 +102,7 @@
 
         <label for="descricao">Informe aqui o que você gosta nos filmes</label>
         <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea><br><br>
-        <fieldset>
-            <legend>Qual o seu filme favorito</legend>
-            <label for="filme 1">Filme 1</label>
-            <input checked type="radio" name="filme" value="filme 1" id="filme 1">
-
-            <label for="filme 2">Filme 2</label>
-            <input type="radio" name="filme" value="filme 2" id="filme 2">
-
-            <label for="filme 3">Filme 3</label>
-            <input type="radio" name="Filme" value="Filme 3" id="filme 3" >
-        </fieldset>
+        
 
         <select>
             <optgroup label="Teste de legenda no combobox">
@@ -131,21 +142,6 @@
             <option value="">Espanha</option>
         </datalist><br><br>
         
-        <audio controls muted autoplay loop>
-            <source src="audio/musica.mp3" type="audio/mp3">
-            Navegador não é compativel para executar áudio!
-        </audio><br><br>
-
-        <video controls autoplay loop muted>
-            <source src=" videos/videoteste.mp4" type="video/mp4">
-        </video><br><br>
-
-
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/X6BfpzRZG8c?si=5qg5hHHD5HZYBMJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
-
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d887.7687315991772!2d-53.47855587083066!3d-24.94975430095069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1774307425791!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
 
         <button type="reset">Limpar</button>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .Titulo_principal {
 background-color: #8b6f1e;
@@ -10,9 +11,30 @@ color: white;
 }
 
 #layout {
+    font-size: 1em;/*herda o tamanho do pai (body) dele com um multiplicador*/
     display: flex;
+    font-style: normal;/*estilo da fonte: italic - normal - oblique*/
+    line-height: 30px;/*espaçamento entre linhas*/
+    font-weight: 400;/*Intensidade do negrito: pode usar 100 a 900 - bold e bolder*/
+    text-transform: none;/*Captalização do texto: uppercase - lowercase - captalize (primeira letra em maiusculo)*/
+    text-decoration: none;/*Sublinhado de texto no css: double - dashed - dotted - wavy - none - underline ou overline doble*/
+    word-spacing: none;/*espaçamento entre palavras: pode usar em pixel(px)*/
+    letter-spacing: none;/*espaçamento entre letras*/
+    text-indent: 20px;/*Espaçamento de paragrafo primeira linha.*/
+    text-align: justify;/*Alinhamento do texto: center - left - right e justify e center*/
 }
 
 .rodape {
     text-align: center;
+}
+body{
+    /*topografia css*/
+    background-color: rgb(0,0,0);/*cor do fundo*/
+    color: rgb(255, 255, 255);/*cor da fonte*/
+    font-family: "Roboto", sans-serif;/*fonte do texto*/
+    font-size: 16px;/*tamanho da fonte = pode ser em px. em .rem*/
+}
+
+nav a{
+    text-decoration: none;
 }

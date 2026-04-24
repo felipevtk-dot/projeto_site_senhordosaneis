@@ -13,6 +13,7 @@ color: white;
 #layout {
     font-size: 1em;/*herda o tamanho do pai (body) dele com um multiplicador*/
     display: flex;
+    flex-direction: column;/*Usado para definir a direção dos elementos que são filhos de um display flex*/
     font-style: normal;/*estilo da fonte: italic - normal - oblique*/
     line-height: 30px;/*espaçamento entre linhas*/
     font-weight: 400;/*Intensidade do negrito: pode usar 100 a 900 - bold e bolder*/
@@ -22,6 +23,26 @@ color: white;
     letter-spacing: none;/*espaçamento entre letras*/
     text-indent: 20px;/*Espaçamento de paragrafo primeira linha.*/
     text-align: justify;/*Alinhamento do texto: center - left - right e justify e center*/
+    /*border-style: dashed;/*Borda do elemento: solid - dashed - dotted - double - groove - inset - outset - none -ridge*/
+    /*border-width: 5px;/*Largura da borda: pode usar em pixel(px) ou em 1em*/
+    /*border-color: rgb(52, 235, 164);/*Cor da borda: pode usar em rgb ou em hexadecimal*/
+    border:dashed 5px rgb(52, 235, 164);/*Definir estilo, espessura e corq numa mesma linha*/
+    border-top: dotted 10px rgb(94, 2, 63);/*Definir estilo, espessura e cor somente para a borda superior*/
+    border-left: dotted 20px rgb(94, 2, 63);/*Definir estilo, espessura e cor somente para a borda esquerda*/
+    border-bottom: solid 15px #fff000;/*Definir estilo, espessura e cor somente para a borda inferior*/
+    /*border-right: ;solid 25px #fff000;/*Definir estilo, espessura e cor somente para a borda direita*/
+    border-radius: 50px;/*Arredondar cantos da borda - px - %*/
+    margin: 20px;/*Margem do lado de fora da borda*/
+    margin-left: 20px;/*Margem do lado de fora da borda somente para o lado esquerdo*/
+    margin-top: 20px;/*Margem do lado de fora da borda somente para o lado superior*/
+    margin-bottom: 20px;/*Margem do lado de fora da borda somente para o lado inferior*/
+    margin-right: 20px;/*Margem do lado de fora da borda somente para o lado direito*/
+    padding: 20px;/*Margem dentro da borda */
+    padding-left: 20px;/*Margem dentro da borda somente para o lado esquerdo*/
+    padding-top: 20px;/*Margem dentro da borda somente para o lado superior*/
+    padding-bottom: 20px;/*Margem dentro da borda somente para o lado inferior*/
+    padding-right: 20px;/*Margem dentro da borda somente para o lado direito*/      
+
 }
 
 .rodape {
@@ -38,3 +59,9 @@ body{
 nav a{
     text-decoration: none;
 }
+
+/*.teste_display{
+    background-color: orange;
+    display: inline-block;/*inline - block - inline-block*/
+    width: 200px;/*Largura do elemento: pode usar em pixel(px) ou em 1em*/
+}*/

@@ -60,8 +60,60 @@ nav a{
     text-decoration: none;
 }
 
+#teste_estilo_lista_ul{
+    list-style-type: none;/* circle - square - disc - none, define o estilo de marcadir da lista não ordenada*/
+}
+#teste_estilo_lista_ol{
+    list-style-type: lower-alpha;/*decimal - lower-roman - upper-roman - lower-greek - lower-alpha - upper-alpha - define o estilo de marcadores de lista ordenadas*/
+    list-style-image: url('img/seta_direita_vermelha.png');
+}
+
+li{
+    border: solid 3px orange;
+    list-style-position: outside;/* Ele serve para dizer ao navegador se o marcador da lista faz aparte ou não do texto da lista: inside - outside*/
+}
+
+#impacto{
+    /*background: url('img/senhordosaneis_fundo.jpg') no-repeat; resume a imagem de fundo e repetição em uma linha*/
+    background-image: url('img/senhordosaneis_fundo.jpg');/*Carrega imagem ao fundo do elemento html*/
+    background-repeat: no-repeat;/*repeat - repeat-x - repeat-y - no-repeat Configura a forma como a imagem ira repetir no fundo do elemento html*/
+    /*background-position: center;/*right - left - center - top - bottom e pode dois ao mesmo tempo*/
+    /*width: 2000px;/*Largura do elemento: pode usar em pixel(px) ou em 1em*/
+    /*height: 1500px;/*Altura do elemento: pode usar em pixel(px*/
+    background-size: cover;/*Serve para definir como a imagem será exibida ao fundo do elemento html - contain - cover - pixels - % - auto*/
+    background-attachment: fixed;/*Define como a imagem vai lidar com o scroll ao fundo do elemento html - scroll - fixed  */
+    text-shadow: 3px 3px 2px red; /*Define a sombra do texto */
+    position: relative;
+}
+
+.noticia{
+    border: solid 3px white;
+    width: 200px;
+    position: fixed;/*Define o possicionamento atras ou na frente dos elementos html - static - relative - fixed - absolute*/
+    height: 100px;
+    overflow: auto;/*Configura o comportamento de quando por exemplo um texto passa das bordas de um elemnto html (da um overflow) visível - hidden - scroll - auto*/
+    box-shadow: 3px 3px 3px 3px orange;/*Define a sombra de um elemento html de bloco- inset - none - h-offset v-offset blur color*/
+}
+
+.um{
+    background-color: blue;
+    top: 0px;
+    left: 30px;
+    z-index: 3;/*Define a ordem que o elemento vai ficar um atras dos outros*/
+}
+
+.dois{
+    background-color: red;
+    top: 40px;
+    left: 70px;
+}
+
+.tres{
+    background-color: green;
+    top: 80px;
+    left: 100px;
+}
 /*.teste_display{
     background-color: orange;
     display: inline-block;/*inline - block - inline-block*/
-    width: 200px;/*Largura do elemento: pode usar em pixel(px) ou em 1em*/
-}*/
+    /*width: 200px;/*Largura do elemento: pode usar em pixel(px) ou em 1em*/

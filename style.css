@@ -171,6 +171,14 @@ h1{
     top: 80px;
     left: 100px;
 }
+
+#teste-gradiente{
+    background-image: linear-gradient(to right, blue, white);/*Definir gradiente no css to right, to bottom, to left, to top ou em fraus(xdeg) quando é um fradiente de circulo eu uso o radial-gradiente*/
+    color: rgb(52, 235, 164);
+    height: 500px;
+    cursor: zoom-in;/*Ela altera o cursor do mouse em cima do elemento html*/
+    
+}
 /*.teste_display{
     background-color: orange;
     display: inline-block;/*inline - block - inline-block*/
